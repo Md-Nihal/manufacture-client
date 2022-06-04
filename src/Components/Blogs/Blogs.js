@@ -7,6 +7,7 @@ const Blogs = () => {
                 # How will you improve the performance of a React Application?
             </h1>
             <ul>
+
                 1)When possible, keep component state local.
                 2)Memoization of React components to avoid unwanted re-rendering
                 3)Using dynamic import to separate code in React ()
@@ -14,6 +15,7 @@ const Blogs = () => {
                 4)In React, windowing or list virtualization
 
                 5)In React, lazy image loading
+                
             </ul>
             <h1 className='text-2xl font-semibold text-primary'>
                 # Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts
