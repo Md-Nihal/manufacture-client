@@ -15,7 +15,7 @@ const Blogs = () => {
                 4)In React, windowing or list virtualization
 
                 5)In React, lazy image loading
-                
+
             </ul>
             <h1 className='text-2xl font-semibold text-primary'>
                 # Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts
@@ -24,6 +24,8 @@ const Blogs = () => {
                 1) If you update it directly, calling the setState() afterward may just replace the update you made.
                 2) When you directly update the state, it does not change this.state immediately. Instead, it creates a pending state transition, and accessing it after calling this method will only return the present value.
                 3) You will lose control of the state across all components.
+
+            
             </div>
             <h1 className='text-2xl font-semibold text-primary'>
                 #  What are the different ways to manage a state in a React application?
