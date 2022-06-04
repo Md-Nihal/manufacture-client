@@ -12,7 +12,7 @@ const MyAppoitment = () => {
     useEffect(() => {
         
         if (user) {
-            fetch(`https://sheltered-mesa-04260.herokuapp.com/booking?customer=${user.email}`, {
+            fetch(`http://localhost:5000/booking?customer=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

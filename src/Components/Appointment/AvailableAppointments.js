@@ -8,7 +8,7 @@ import Service from './Service';
 
 const AvailableAppointments = () => {
     const [treatment, setTreatment] = useState(null);
-    const { data: services,quantity, isLoading, refetch } = useQuery(['available'],() => fetch(`https://sheltered-mesa-04260.herokuapp.com/service?=quantity${quantity}`)
+    const { data: services,quantity, isLoading, refetch } = useQuery(['available'],() => fetch(`http://localhost:5000/service?=quantity${quantity}`)
         .then(res => res.json()))
 
     if (isLoading) {

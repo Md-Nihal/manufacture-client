@@ -22,7 +22,7 @@ const BookingModal = ({  treatment, setTreatment, refetch}) => {
         }
         console.log(booking)
 
-        fetch('https://sheltered-mesa-04260.herokuapp.com/booking', {
+        fetch('http://localhost:5000/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

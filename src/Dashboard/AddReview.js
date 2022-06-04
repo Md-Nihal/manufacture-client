@@ -7,7 +7,7 @@ const AddReview = () => {
     const [Services,setServices] = useState([]);
 
     useEffect(()=>{
-        fetch('https://sheltered-mesa-04260.herokuapp.com/service')
+        fetch('http://localhost:5000/service')
         .then(res => res.json())
         .then(data => setServices(data))
     },[])
@@ -17,7 +17,7 @@ const AddReview = () => {
         console.log(data.email)
         console.log(handleSubmit)
 
-        axios.post('https://sheltered-mesa-04260.herokuapp.com/reviewData', data)
+        axios.post('http://localhost:5000/reviewData', data)
         .then(res=>{
             if (res.data.insertedId){
                 toast(`Rated Successfully `)

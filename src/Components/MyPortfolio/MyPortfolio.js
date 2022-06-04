@@ -7,9 +7,9 @@ const MyPortfolio = () => {
         <div class="hero-content flex-col lg:flex-row">
           <img src={portfolio} alt='' class="max-w-sm rounded-lg shadow-2xl" />
           <div>
-            <h1 class="text-3xl font-bold">Shahriar Islam</h1>
-            <p class="py-6">Email: dipshahriarislam@gmail.com</p>
-            <p class="py-6">Phone : 01871535267</p>
+            <h1 class="text-3xl font-bold">Md Nihal</h1>
+            <p class="py-6">Email: mdnihal01716@gmail.com</p>
+            <p class="py-6">Phone : 01856918574</p>
             
           </div>
         </div>
