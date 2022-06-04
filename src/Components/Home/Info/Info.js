@@ -15,8 +15,8 @@ const Info = () => {
                 <li data-content="✓" class="step">Payment</li>
             </ul>
 
-
         </section>
+        
     );
 };
 
