@@ -20,6 +20,7 @@ const Footer = () => {
         <div>
           <p>Copyright © 2022 - All right reserved by Md Nihal</p>
         </div>
+        
       </footer>
     )}
 
