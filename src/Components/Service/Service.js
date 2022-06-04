@@ -20,6 +20,7 @@ const Service = () => {
                     service={service}
                     ></SingleService>
                 )
+                
             }
             </div>
         </div>
