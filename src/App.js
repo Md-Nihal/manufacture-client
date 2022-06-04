@@ -20,6 +20,7 @@ import RequireAdmin from './Components/LogIn/RequireAdmin';
 import ManageAllProduct from './Dashboard/ManageAllProduct';
 import ShowAllProduct from './Dashboard/ShowAllProduct';
 import Blogs from './Components/Blogs/Blogs';
+import NotFound from './Components/Shared/NotFound';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="login" element={<LogIn />} />
         <Route path="signup" element={<SignUp />} />
         
+        
         <Route path="myportfolio" element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path="blogs" element={<Blogs></Blogs>}></Route>
         <Route path="appointment" element={
@@ -46,11 +48,9 @@ function App() {
           
           <Route path="review" element={<AddReview></AddReview>}></Route>
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
-          <Route path="manageallproduct" element={<RequireAdmin><ManageAllProduct></ManageAllProduct></RequireAdmin>}></Route>
-          
-          
-          
+          <Route path="manageallproduct" element={<RequireAdmin><ManageAllProduct></ManageAllProduct></RequireAdmin>}></Route>    
         </Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
         
       </Routes>
       <ToastContainer/>

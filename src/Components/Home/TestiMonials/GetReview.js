@@ -7,7 +7,7 @@ const GetReview = () => {
     
     const [reviews, setReview]= useState([])
     useEffect( ()=>{
-        fetch('http://localhost:5000/reviewData')
+        fetch('https://whispering-atoll-87890.herokuapp.com/reviewData')
         .then(res=>res.json())
         .then(data=>setReview(data))
     },[])

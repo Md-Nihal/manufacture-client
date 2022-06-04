@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const UserRow = ({ user, refetch, index }) => {
     const { email, role } = user;
     const makeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`, {
+        fetch(`https://whispering-atoll-87890.herokuapp.com/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -25,7 +25,7 @@ const UserRow = ({ user, refetch, index }) => {
             }
 
             const handleDelete =id =>{
-                const url =`http://localhost:5000/user/${id}`;
+                const url =`https://whispering-atoll-87890.herokuapp.com/user/${id}`;
                 fetch(url,{
                     method: 'DELETE'
                 })

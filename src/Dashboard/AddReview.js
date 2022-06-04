@@ -7,7 +7,7 @@ const AddReview = () => {
     const [Services,setServices] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/service')
+        fetch('https://whispering-atoll-87890.herokuapp.com/service')
         .then(res => res.json())
         .then(data => setServices(data))
     },[])
@@ -17,7 +17,7 @@ const AddReview = () => {
         console.log(data.email)
         console.log(handleSubmit)
 
-        axios.post('http://localhost:5000/reviewData', data)
+        axios.post('https://whispering-atoll-87890.herokuapp.com/reviewData', data)
         .then(res=>{
             if (res.data.insertedId){
                 toast(`Rated Successfully `)

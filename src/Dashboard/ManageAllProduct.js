@@ -5,7 +5,7 @@ const ManageAllProduct = () => {
     const[services,setServices]= useState([]);
     
     useEffect( ()=>{
-        fetch('http://localhost:5000/service')
+        fetch('https://whispering-atoll-87890.herokuapp.com/service')
             .then(res=>res.json())
             .then(data=>setServices(data))
     },[])

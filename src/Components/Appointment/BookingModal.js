@@ -22,7 +22,7 @@ const BookingModal = ({  treatment, setTreatment, refetch}) => {
         }
         console.log(booking)
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://whispering-atoll-87890.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -12,7 +12,7 @@ const MyAppoitment = () => {
     useEffect(() => {
         
         if (user) {
-            fetch(`http://localhost:5000/booking?customer=${user.email}`, {
+            fetch(`https://whispering-atoll-87890.herokuapp.com/booking?customer=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
