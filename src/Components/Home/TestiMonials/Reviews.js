@@ -4,11 +4,8 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import ReactStars from "react-rating-stars-component";
 import auth from '../../../firebase.init';
 
-
-
 const Reviews = ({ review }) => {
     console.log(review)
-
 
     const { name, yourReview, rating } = review;
     return (
